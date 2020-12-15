@@ -34,3 +34,4 @@ sudo yum install -y devtoolset-9
 
 cd $HOME
 git clone https://github.com/gadube/cuSZ.git
+sudo setfacl -R -m user:gadube:rwx cuSZ 
