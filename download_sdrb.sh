@@ -30,6 +30,8 @@ wget -O exafel.tar.gz https://97235036-3749-11e7-bcdc-22000b9a448b.e.globus.org/
 sudo tar -xvf exafel.tar.gz -C /mydata/exafel
 
 wget -O hurricane.tar.gz https://97235036-3749-11e7-bcdc-22000b9a448b.e.globus.org/ds131.2/Data-Reduction-Repo/raw-data/Hurricane-ISABEL/SDRBENCH-Hurricane-ISABEL-100x500x500.tar.gz
-sudo tar -xvf hurricane.tar.gz
+sudo tar -xvf hurricane.tar.gz -C /mydata/hurr
+
+rm -rf /mydata/*.tar.gz
 
 sudo setfacl -R -m user:gadube:rwx /mydata
